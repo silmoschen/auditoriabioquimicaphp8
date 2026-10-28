@@ -37,10 +37,10 @@ $auditoria->getObject($nroauditoria);
 $c = '';
 $j = 0;
 $item = 0;
-for ($i = 0; $i < 500; $i++) {
+for ($i = 0; $i < 50; $i++) {
     $c = substr($autorizadas, $j, 6);
     $j = $j + 6;
-    if ($c == 0) {
+    if ($c == '') {
         break;
     }
 
@@ -52,10 +52,10 @@ for ($i = 0; $i < 500; $i++) {
 // separamos los códigos rechazados
 $c = '';
 $j = 0;
-for ($i = 0; $i < 500; $i++) {
+for ($i = 0; $i < 50; $i++) {
     $c = substr($rechazadas, $j, 6);
     $j = $j + 6;
-    if ($c == 0) {
+    if ($c == '') {
         break;
     }
 
@@ -68,10 +68,10 @@ for ($i = 0; $i < 500; $i++) {
 $c = '';
 $j = 0;
 $itt = 0;
-for ($i = 0; $i < 500; $i++) {
+for ($i = 0; $i < 50; $i++) {
     $c = substr($capitadas, $j, 6);
     $j = $j + 6;
-    if ($c == 0) {
+    if ($c == '') {
         break;
     }
 

@@ -41,7 +41,7 @@ if ($_SESSION['susuario'] != $a && $_SESSION['susuario'] > '') {
             $_SESSION["nivel"] = $us->nivel;
             $_SESSION["efector"] = $us->getEfector();
             $loginOK = true;
-            if ($us->getEfector() != '') $auditor = true;
+            if ($us->getEfector() != '') $auditor = true;           
         } else {
             $loginOK = false;
         }
@@ -72,8 +72,10 @@ if ($_SESSION['susuario'] != $a && $_SESSION['susuario'] > '') {
 
         if ($auditores->getAuditores($fecha)) {
 
+
             // Verificamos el auditor
-            //echo $auditores->getAuditor1() . '  ' . $us->getEfector() . ' ---- ' . $auditores->getAuditor2() . '  ' . $us->getEfector();
+            echo $auditores->getAuditor1() . '  ' . $us->getEfector() . ' ---- ' . $auditores->getAuditor2() . '  ' . $us->getEfector();
+           // sleep(5);
             $autoriza = 'N';
 
             if ($us->getEfector() == $auditores->getAuditor1()) {
@@ -95,6 +97,8 @@ if ($_SESSION['susuario'] != $a && $_SESSION['susuario'] > '') {
             $_SESSION["auditor2"] = $auditores->getAuditor2();
             $_SESSION["nauditor1"] = $auditores->getNAuditor1();
             $_SESSION["nauditor2"] = $auditores->getNAuditor2();
+            
+            
         }
     }
 }

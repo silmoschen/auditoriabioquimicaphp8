@@ -543,8 +543,9 @@ class cAuditoria {
         $hasta = $this->utiles->getFechaAAAAMMDD($xhasta);
 
         //$query = "SELECT nroauditoria, codos, nrodoc, fecha, efector, idprof, iddiag, diferida FROM cab_auditoria WHERE codos = '$codos' AND nrodoc = '$nrodoc' AND efector = '$efector' AND anulada <> 'S' AND nroauditoria > '0000000000000000000' ORDER BY fecha DESC LIMIT $RegistrosAEmpezar, $RegistrosAMostrar";
-        $query = "SELECT nroauditoria, codos, nrodoc, fecha, efector, idprof, iddiag, diferida, anulada FROM cab_auditoria WHERE codos = '$codos' AND nrodoc = '$nrodoc' AND efector = '$efector' AND nroauditoria > '0000000000000000000' ORDER BY fecha DESC LIMIT $RegistrosAEmpezar, $RegistrosAMostrar";
-
+        $query = "SELECT nroauditoria, codos, nrodoc, fecha, efector, idprof, iddiag, diferida, anulada FROM cab_auditoria WHERE codos = '$codos' AND nrodoc = '$nrodoc' AND efector = '$efector' AND fecha between '$desde' and '$hasta' AND nroauditoria > '0000000000000000000' ORDER BY fecha DESC LIMIT $RegistrosAEmpezar, $RegistrosAMostrar";
+        if ($nrodoc == '') $query = "SELECT nroauditoria, codos, nrodoc, fecha, efector, idprof, iddiag, diferida, anulada FROM cab_auditoria WHERE codos = '$codos' AND efector = '$efector' AND fecha between '$desde' and '$hasta' AND nroauditoria > '0000000000000000000' ORDER BY fecha DESC LIMIT $RegistrosAEmpezar, $RegistrosAMostrar";
+        //echo $query;
         $this->res = mysqli_query($GLOBALS['con'], $query);
         return $this->res;
     }
@@ -1759,6 +1760,7 @@ class cAuditoria {
     }
 
     function actualizarDeterminacionObservaciones($nroauditoria, $codigo, $estado, $observacion) {
+        if ($codigo == '') exit;
         $query = "UPDATE det_auditoria SET estado = " . "'" . $estado . "', observacion = " . "'" . $observacion . "'" . " WHERE nroauditoria = " . '"' . $nroauditoria . '"' . " and codigo = " . '"' . $codigo . '"';
         $result = mysqli_query($GLOBALS['con'], $query);
 

@@ -1,13 +1,18 @@
 <?
 session_start();
 
+//if (isset($_SESSION['auditor1'])) echo '....<br/>' . $_SESSION["auditor1"];
+
 $usuario = $_SESSION['susuario'];
 $pass = $_SESSION['spass'];
 $nombre = $_SESSION['snombre'];
+
+/*
 $auditor1 = isset($_GET['auditor1']) ? $_GET['auditor1'] : '';
 $auditor2 = isset($_GET['auditor2']) ? $_GET['auditor2'] : '';
 $nauditor1 = isset($_GET['nauditor1']) ? $_GET['nauditor1'] : '';
 $nauditor2 = isset($_GET['nauditor2']) ? $_GET['nauditor2'] : '';
+//echo ' ---- ' . $_GET['auditor1'];
 /*
 $auditor1 = $_SESSION['auditor1'] ?? '';
 $auditor2 = $_SESSION['auditor2'] ?? '';
@@ -15,6 +20,12 @@ $nauditor1 = $_SESSION['nauditor1'] ?? '';
 $nauditor2 = $_SESSION['nauditor2'] ?? '';
  * 
  */
+
+if (isset($_SESSION['auditor1'])) $auditor1 = $_SESSION['auditor1'];
+if (isset($_SESSION['auditor2'])) $auditor2 = $_SESSION['auditor2'];
+if (isset($_SESSION['nauditor1'])) $nauditor1 = $_SESSION['nauditor1'];
+if (isset($_SESSION['nauditor2'])) $nauditor2 = $_SESSION['nauditor2'];
+
 $efector = $_SESSION['efector'];
 
 include_once('__routes.php');

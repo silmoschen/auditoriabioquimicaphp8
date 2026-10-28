@@ -105,7 +105,7 @@ if ($obsocial->_reglaNegocio == 1) {
     $j = 0;
     $k = 0;
     $autoriza = true;
-    for ($i = 0; $i < 500; $i++) {
+    for ($i = 0; $i < 50; $i++) {
         $c = substr($codigos, $j, 6);
         $j = $j + 6;
         if ($c === '' || $c === false || $c == 0) {
@@ -479,7 +479,7 @@ if ($obsocial->_reglaNegocio == 5) {
     $k = 0;
     $autoriza = true;
 
-    for ($i = 0; $i < 500; $i++) {
+    for ($i = 0; $i < 50; $i++) {
         $c = substr($codigos, $j, 6);
         $j = $j + 6;
         if ($c === '' || $c === false || $c == 0) {
@@ -700,7 +700,7 @@ if ($obsocial->_reglaNegocio == -1) {
     $j = 0;
     $k = 0;
     $autoriza = true;
-    for ($i = 0; $i < 500; $i++) {
+    for ($i = 0; $i < 50; $i++) {
         $c = substr($codigos, $j, 6);
         $j = $j + 6;
         if ($c === '' || $c === false || $c == 0) {
@@ -1067,7 +1067,7 @@ if ($obsocial->_reglaNegocio == 2) {
     $k = 0;
     $ln = 0;
     $autoriza = true;
-    for ($i = 0; $i < 500; $i++) {
+    for ($i = 0; $i < 50; $i++) {
         $c = substr($codigos, $j, 6);
         $j = $j + 6;
         if ($c === '' || $c === false || $c == 0) {
@@ -1407,7 +1407,7 @@ if ($obsocial->_reglaNegocio == 3) {
     $j = 0;
     $k = 0;
     $autoriza = true;
-    for ($i = 0; $i < 500; $i++) {
+    for ($i = 0; $i < 50; $i++) {
         $c = substr($codigos, $j, 6);
         $j = $j + 6;
         if ($c === '' || $c === false || $c == 0) {
@@ -1609,7 +1609,7 @@ if ($obsocial->_reglaNegocio == 4) {
     $j = 0;
     $k = 0;
     $autoriza = true;
-    for ($i = 0; $i < 500; $i++) {
+    for ($i = 0; $i < 50; $i++) {
         $c = substr($codigos, $j, 6);
         $j = $j + 6;
         if ($c === '' || $c === false || $c == 0) {
@@ -1946,7 +1946,7 @@ if ($obsocial->_reglaNegocio == 5) {
     $k = 0;
     $autoriza = true;
 
-    for ($i = 0; $i < 500; $i++) {
+    for ($i = 0; $i < 50; $i++) {
         $c = substr($codigos, $j, 6);
         $j = $j + 6;
         if ($c === '' || $c === false || $c == 0) {
@@ -2175,7 +2175,7 @@ if ($obsocial->_reglaNegocio == 6) {
     $k = 0;
     $autoriza = true;
 
-    for ($i = 0; $i < 500; $i++) {
+    for ($i = 0; $i < 50; $i++) {
         $c = substr($codigos, $j, 6);
         $j = $j + 6;
         if ($c === '' || $c === false || $c == 0) {
@@ -2416,7 +2416,7 @@ if ($obsocial->_reglaNegocio == 8) {
     $k = 0;
     $autoriza = true;
 
-    for ($i = 0; $i < 500; $i++) {
+    for ($i = 0; $i < 50; $i++) {
         $c = substr($codigos, $j, 6);
         $j = $j + 6;
         if ($c === '' || $c === false || $c == 0) {
@@ -2684,7 +2684,7 @@ if ($obsocial->_reglaNegocio == 9) {
     $k = 0;
     $autoriza = true;
 
-    for ($i = 0; $i < 500; $i++) {
+    for ($i = 0; $i < 50; $i++) {
         $c = substr($codigos, $j, 6);
         $j = $j + 6;
         if ($c === '' || $c === false || $c == 0) {
@@ -2961,7 +2961,7 @@ if ($obsocial->_reglaNegocio == 12) {
     $k = 0;
     $autoriza = true;
 
-    for ($i = 0; $i < 500; $i++) {
+    for ($i = 0; $i < 50; $i++) {
         $c = substr($codigos, $j, 6);
         $j = $j + 6;
         if ($c === '' || $c === false || $c == 0) {
@@ -3159,7 +3159,7 @@ if ($obsocial->_reglaNegocio == 14) {
     $k = 0;
     $autoriza = true;
 
-    for ($i = 0; $i < 500; $i++) {
+    for ($i = 0; $i < 50; $i++) {
         $c = substr($codigos, $j, 6);
         $j = $j + 6;
         if ($c === '' || $c === false || $c == 0) {

@@ -4,8 +4,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/sidelphi32/php/auditoria_online/reco/classes/conexion.php</file>
-            <file>file:/F:/sidelphi32/php/auditoria_online/reco/anular_ordenes_auditor.php</file>
+            <file>file:/F:/sidelphi32/php/auditoria_online/reco/classes/cAuditoria.php</file>
+            <file>file:/F:/sidelphi32/php/auditoria_online/reco/operaciones/paginador_consulta_auditoria.php</file>
+            <file>file:/F:/sidelphi32/php/auditoria_online/reco/consulta_de_ordenes.php</file>
+            <file>file:/F:/sidelphi32/php/auditoria_online/reco/auditoria_de_ordenesgeneradas.php</file>
         </group>
     </open-files>
 </project-private>

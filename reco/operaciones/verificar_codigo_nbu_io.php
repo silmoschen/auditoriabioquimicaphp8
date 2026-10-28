@@ -394,7 +394,7 @@ if (strlen(trim($codigo)) > 0) {
         // Ahora verificamos que ese código no esté incluido en otro
         $incluidoencodigo = '';
         $j = 0;
-        for ($i = 0; $i < 500; $i++) {
+        for ($i = 0; $i < 50; $i++) {
             $c = substr($codigos, $j, 6);
             $j = $j + 6;
             if ($c === '' || $c === false || $c == 0) {

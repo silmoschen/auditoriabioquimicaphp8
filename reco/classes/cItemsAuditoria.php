@@ -208,7 +208,8 @@ class cItemsAuditoria {
     }
 
     function ActualizarItems($nroauditoria, $item, $codigo, $efector, $codos, $fecha, $nrodoc, $estado) {
-        // Borramos si ya existe        
+        // Borramos si ya existe
+        if ($codigo == '') exit;        
         if ($item == '001') {
             $query = "DELETE FROM det_auditoria WHERE nroauditoria = '$nroauditoria'";
             $result = mysqli_query($GLOBALS['con'], $query);
@@ -278,6 +279,7 @@ class cItemsAuditoria {
 
     function actualizarItemsExternos($nroauditoria, $item, $codigo, $efector, $codos, $fecha, $nrodoc, $estado) {
         // Borramos si ya existe
+        if ($codigo == '') exit;    
         if ($item == '1') {
             $query = "DELETE FROM det_auditoria WHERE nroauditoria = '$nroauditoria' and items >= '300'";
             $result = mysqli_query($GLOBALS['con'], $query);
@@ -945,6 +947,8 @@ class cItemsAuditoria {
     
     function addItemsExterno($nroauditoria, $item, $codigo, $efector, $codos, $fecha, $nrodoc, $estado) {
 
+        if ($codigo == '') exit;    
+        
         $f = $this->utiles->getFechaAAAAMMDD($fecha);
         $periodo = substr($f, 4, 2) . '/' . substr($f, 0, 4);
         $monto = $this->getValorAnalisis($codigo, $codos, $periodo);

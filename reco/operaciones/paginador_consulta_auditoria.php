@@ -121,7 +121,7 @@ echo "</table>";
 if (strlen($nrodoc == 0)) {
     $NroRegistros = mysqli_num_rows($auditoria->getConsultaOrdenes($codos, $idprof, $desde, $hasta, $tc, 0, 10000000000));
 } else {
-    $NroRegistros = mysqli_num_rows($auditoria->getConsultaOrdenesAfiliadoEfector($codos, $idprof, $nrodoc, $desde, $hasta, $tc, 0, 1000000000));
+    $NroRegistros = mysqli_num_rows($auditoria->getConsultaOrdenesAfiliadoEfector($codos, $idprof, $nrodoc, $desde, $hasta, $tc, 0, 1000000000));   
 }
 
 $PagAnt = $PagAct - 1;

@@ -107,7 +107,7 @@ if ($obsocial->_reglaNegocio == 1) {
     $j = 0;
     $k = 0;
     $autoriza = true;
-    for ($i = 0; $i < 500; $i++) {
+    for ($i = 0; $i < 50; $i++) {
         $c = substr($codigos, $j, 6);
         $j = $j + 6;
         if ($c === '' || $c === false || $c == 0) {

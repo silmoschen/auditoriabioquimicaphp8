@@ -83,7 +83,7 @@ if ($id != '' and $obsocial->getAutorizacionDirecta() != 'S' and $obsocial->getT
     $c = '';
     $j = 0;
     $noautoriza = false;
-    for ($i = 0; $i < 500; $i++) {
+    for ($i = 0; $i < 50; $i++) {
         $c = substr($codigos, $j, 6);
         $j = $j + 6;
         if ($c === '' || $c === false || $c == 0) {
@@ -180,7 +180,7 @@ if ($id != '' and $obsocial->getAutorizacionDirecta() == 'S' and $obsocial->getT
     $c = '';
     $j = 0;
     $autoriza = true;
-    for ($i = 0; $i < 500; $i++) {
+    for ($i = 0; $i < 50; $i++) {
         $c = substr($codigos, $j, 6);
         $j = $j + 6;
         if ($c === '' || $c === false || $c == 0) {
@@ -214,7 +214,7 @@ if ($obsocial->getTopeAnual() == 'S') {
     $meses = 12;
     $auditoria->detalle = new cItemsAuditoria;
 
-    for ($i = 0; $i < 500; $i++) {
+    for ($i = 0; $i < 50; $i++) {
         $c = substr($codigos, $j, 6);
         $j = $j + 6;
         if ($c === '' || $c === false || $c == 0) {
